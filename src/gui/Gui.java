@@ -99,9 +99,9 @@ class MyButtonListener implements ActionListener {
         // clear textArea
         this.textArea.setText(null);
 
-        String val1 = this.textField1.getText();
-        String val2 = this.textField2.getText();
-        String val3 = this.hField.getText();
+        String val1 = this.textField1.getText().toLowerCase();
+        String val2 = this.textField2.getText().toLowerCase();
+        String val3 = this.hField.getText().toLowerCase();
         System.err.println(val1);
         System.err.println(val2);
         System.err.println(val3);
