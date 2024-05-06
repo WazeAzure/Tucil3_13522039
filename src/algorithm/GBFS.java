@@ -50,6 +50,7 @@ public class GBFS extends Algorithm {
         while(!queue.isEmpty()){
             Node n = queue.poll();
             nodeVisited++;
+            queue.clear();
 
             if(!checkisVisited(n)){
                 setVisitedNode(n);

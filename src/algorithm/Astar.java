@@ -64,7 +64,7 @@ public class Astar extends Algorithm {
                     if(temp.get(i) != null){
                         Node x = new Node(temp.get(i).info, n);
 
-                        if(x != null){
+                        if(x != null && !checkisVisited(x)){
                             x.parent = n;
                             x.depth = x.parent.depth + 1;
                             queue.add(x);
